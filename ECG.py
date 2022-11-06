@@ -73,3 +73,26 @@ else:
        d_swav = float(input('duration = '))
        t_swav = 0.125
        d = 0
+   # t wave specifications
+   print('\n\nt wave specifications\n')
+   d = int(input('Enter 1 for default specification else press 2: \n'))
+   if d == 1:
+       a_twav = 0.35
+       d_twav = 0.142
+       t_twav = 0.18
+   else:
+       a_twav = float(input('amplitude = '))
+       d_twav = float(input('duration = '))
+       t_twav = float(input('s-t interval = '))
+       d = 0
+   # u wave specifications
+   print('\n\nu wave specifications\n')
+   d = int(input('Enter 1 for default specification else press 2: '))
+   if d == 1:
+       a_uwav = 0.035
+       d_uwav = 0.0476
+       t_uwav = 0.433
+   else:
+       a_uwav = float(input('amplitude = '))
+       d_uwav = float(input('duration = '))
+       t_uwav = 0.433
