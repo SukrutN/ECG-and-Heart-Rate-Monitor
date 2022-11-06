@@ -39,3 +39,37 @@ else:
        d_pwav = float(input('duration = '))
        t_pwav = float(input('p-r interval = '))
        d = 0
+ # q wave specifications
+   print('\n\nq wave specifications\n')
+   d = int(input('Enter 1 for default specification else press 2: \n'))
+   if d == 1:
+       a_qwav = 0.025
+       d_qwav = 0.066
+       t_qwav = 0.166
+   else:
+       a_qwav = float(input('amplitude = '))
+       d_qwav = float(input('duration = '))
+       t_qwav = 0.1
+       d = 0
+   # qrs wave specifications
+   print('\n\nqrs wave specifications\n')
+   d = int(input('Enter 1 for default specification else press 2: \n'))
+   if d == 1:
+       a_qrswav = 1.6
+       d_qrswav = 0.11
+   else:
+       a_qrswav = float(input('amplitude = '))
+       d_qrswav = float(input('duration = '))
+       d = 0
+   # s wave specifications
+   print('\n\ns wave specifications\n')
+   d = int(input('Enter 1 for default specification else press 2: \n'))
+   if d == 1:
+       a_swav = 0.25
+       d_swav = 0.066
+       t_swav = 0.125
+   else:
+       a_swav = float(input('amplitude = '))
+       d_swav = float(input('duration = '))
+       t_swav = 0.125
+       d = 0
