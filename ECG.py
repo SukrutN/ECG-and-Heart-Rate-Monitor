@@ -178,5 +178,22 @@ def u_wav(x, a, d, t, li):
    uwav1 = u1 + u2
    uwav = a * uwav1
    return uwav
+
+# Generate the individual waveform components
+pwav = p_wav(x, a_pwav, d_pwav, t_pwav, li)
+qwav = q_wav(x, a_qwav, d_qwav, t_qwav, li)
+qrswav = qrs_wav(x, a_qrswav, d_qrswav, li)
+swav = s_wav(x, a_swav, d_swav, t_swav, li)
+twav = t_wav(x, a_twav, d_twav, t_twav, li)
+uwav = u_wav(x, a_uwav, d_uwav, t_uwav, li)
  
+# Combine the waveform components to form the complete ECG signal
+ecg_signal = pwav + qwav + qrswav + swav + twav + uwav
  
+# Plot the ECG signal
+plt.plot(x, ecg_signal)
+plt.xlabel('Time (s)')
+plt.ylabel('Voltage (mV)')
+plt.title('Synthetic ECG Signal')
+plt.show()
+
