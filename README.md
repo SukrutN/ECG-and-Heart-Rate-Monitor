@@ -7,3 +7,9 @@ Schematic:
 
 Hardware Setup:
 ![Hardware Setup](https://i.imgur.com/tqrMKiV.png)
+
+Sensor Activation Displaying Heart Rate:
+![Hardware Setup](https://imgur.com/a/kxeW60D)
+
+Sample Signal Graph:
+![Hardware Setup](https://imgur.com/a/6QPE35g)
